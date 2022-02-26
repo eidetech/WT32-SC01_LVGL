@@ -79,4 +79,3 @@ void lv_ex_get_started_2(void)
     lv_label_set_text(label, "Button 2");                     /*Set the labels text*/
 }
 
-

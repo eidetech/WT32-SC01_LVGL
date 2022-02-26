@@ -26,6 +26,8 @@
 
 #include "lv_examples/src/lv_demo_widgets/lv_demo_widgets.h"
 #include "lv_examples/src/lv_ex_get_started/lv_ex_get_started.h"
+#include "lv_examples/src/lv_demo_widgets/lv_demo_widgets.h"
+#include "lv_examples/src/lv_demo_printer/lv_demo_printer.h"
 
 /*********************
  *      DEFINES
@@ -117,8 +119,7 @@ void guiTask(void *pvParameter) {
     ESP_ERROR_CHECK(esp_timer_create(&periodic_timer_args, &periodic_timer));
     ESP_ERROR_CHECK(esp_timer_start_periodic(periodic_timer, LV_TICK_PERIOD_MS * 1000));
 
-
-    lv_ex_get_started_3();
+    lv_demo_widgets();
 
     while (1) {
         vTaskDelay(1);
