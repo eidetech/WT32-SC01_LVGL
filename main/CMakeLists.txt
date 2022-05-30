@@ -1,4 +1,4 @@
-set(SOURCES main.c)
+set(SOURCES main.c bt.c)
 idf_component_register(SRCS ${SOURCES}
                     INCLUDE_DIRS .
                     REQUIRES lvgl_esp32_drivers lvgl_touch lvgl_tft lvgl lv_examples)
